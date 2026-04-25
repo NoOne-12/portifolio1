@@ -28,6 +28,12 @@ header ul li a { color: #fff; text-decoration: none; }
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
+}
+.hero button:hover{
+  scale: calc(1.125);
+  background: #676565;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
 
