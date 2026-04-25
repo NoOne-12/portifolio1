@@ -1,20 +1,16 @@
-// Smooth scroll to section
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
-// Contact form submission with popup
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
   document.getElementById("popup").style.display = "flex";
 });
 
-// Close popup
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
 
-// Theme toggle
 const themeToggle = document.getElementById("themeToggle");
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
@@ -23,7 +19,6 @@ themeToggle.addEventListener("click", () => {
     : "🌙 Dark Mode";
 });
 
-// Typing effect for hero section
 const typingElement = document.getElementById("typing");
 const text = "Hello, I'm a Software Engineering Student";
 let index = 0;
@@ -44,7 +39,6 @@ function typeEffect() {
 }
 window.onload = typeEffect;
 
-// Animate skill bars when they come into view
 window.addEventListener("scroll", function() {
   const skills = document.querySelectorAll(".progress");
   skills.forEach(skill => {
@@ -55,7 +49,6 @@ window.addEventListener("scroll", function() {
   });
 });
 
-// Scroll reveal for About & Skills sections
 const reveals = document.querySelectorAll("#about, #skills");
 
 window.addEventListener("scroll", () => {
@@ -67,12 +60,10 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Initial hidden state for reveal sections
 reveals.forEach(section => {
   section.classList.add("reveal");
 });
 
-// Reveal project cards on scroll
 const projectCards = document.querySelectorAll(".project-card");
 
 window.addEventListener("scroll", () => {
@@ -85,7 +76,6 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Initial hidden state for project cards
 projectCards.forEach(card => {
   card.style.opacity = "0";
   card.style.transform = "translateY(30px)";
