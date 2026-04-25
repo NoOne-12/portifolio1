@@ -45,7 +45,9 @@ header ul li a { color: #fff; text-decoration: none; }
   overflow: hidden;
 }
 
-
+#about, #skills, #projects{
+  margin: 20px;
+}
 .about-container {
   display: flex;
   flex-wrap: wrap;
