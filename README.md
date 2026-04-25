@@ -19,10 +19,10 @@ This project showcases my profile, skills, projects, and contact information in 
 
 ## 📂 Project Structure
 portfolio1/
-│── index.html        # Main HTML file
-│── style.css         # Stylesheet with responsive design & animations
-│── script.js         # JavaScript for interactivity (typing, theme toggle, scroll reveal, etc.)
-│── image.jpg       # Your profile picture
+│── index.html       
+│── style.css        
+│── script.js        
+│── image.jpg       
 
 
 ---
